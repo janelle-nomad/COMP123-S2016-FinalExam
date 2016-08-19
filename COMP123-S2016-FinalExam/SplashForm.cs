@@ -17,9 +17,23 @@ namespace COMP123_S2016_FinalExam
             InitializeComponent();
         }
 
+        private void SplashForm_Load()
+        {
+            timer1.Enabled = true;
+        }
         private void timer_tick(object sender, EventArgs e)
         {
-            this.Hide();
+            //3 methods left to intialize form
+
+            if (progressBar1.Value == progressBar1.Maximum)
+            {
+
+                GenerateNameForm generateNameForm = new GenerateNameForm();
+                generateNameForm.SplashForm = this;
+                this.Hide();
+                generateNameForm.Show();
+                timer1.Enabled = false;
+            }
         }
     }
 }

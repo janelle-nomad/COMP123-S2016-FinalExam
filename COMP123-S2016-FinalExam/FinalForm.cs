@@ -38,5 +38,26 @@ namespace COMP123_S2016_FinalExam
         {
             Application.Exit();
         }
+
+        /**
+         * Generates a method called form load that will use the program.character object to fill out the
+         * textboxes with the names that were randomly selected
+         * 
+         */
+        private void FinalForm_Load(object sender, EventArgs e)
+        {
+            /*
+            FinalForm: This form is partially complete (5 Marks: Functionality)
+            
+            The Load Method of this form should use the Program.character object and fill out the Text
+            
+            values of the TextBox controls contained in this form.
+           */
+           
+            Character character = Program.character;
+
+            textBox1.Text = character.FirstName;
+            LastNameTextBox.Text = character.LastName;
+        }
     }
 }

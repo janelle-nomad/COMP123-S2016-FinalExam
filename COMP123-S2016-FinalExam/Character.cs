@@ -21,8 +21,8 @@ namespace COMP123_S2016_FinalExam
 
         public string Race { get; set; }
 
-        public string FirstName { get; set; }
+        public string FirstName { get; set; } //First name Property
 
-        public string LastName { get; set; }
+        public string LastName { get; set; }  //last name property  
     }
 }

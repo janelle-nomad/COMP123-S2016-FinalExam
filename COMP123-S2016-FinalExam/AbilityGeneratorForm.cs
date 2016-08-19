@@ -8,21 +8,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FontAwesome.Sharp;
+using FontAwesome.Sharp; //font awesome wasn't loaded correctly
 
 namespace COMP123_S2016_FinalExam
 {
     public partial class AbilityGeneratorForm : Form
     {
         // private Instance Object
+
         private Random _random;
 
         private TextBox _firstAbility;
         private TextBox _secondAbility;
         private TextBox _modifiedAbility;
-
-
-
         public AbilityGeneratorForm()
         {
             InitializeComponent();
@@ -56,6 +54,8 @@ namespace COMP123_S2016_FinalExam
 
             return result;
         }
+
+        public GenerateNameForm RandName;
 
         private void GenerateAbilities()
         {
